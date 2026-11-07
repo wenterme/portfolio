@@ -37,11 +37,42 @@ if (menuButton && navigation) {
 }
 
 const emailLink = document.querySelector('#contact-email');
-if (emailLink && CONTACT_EMAIL.trim()) {
-  emailLink.href = `mailto:${CONTACT_EMAIL.trim()}`;
+const emailAddress = document.querySelector('#contact-email-address');
+const contactAlternative = document.querySelector('#contact-alternative');
+const copyButton = document.querySelector('#contact-copy');
+const copyLabel = document.querySelector('#contact-copy-label');
+const copyStatus = document.querySelector('#contact-copy-status');
+const configuredEmail = CONTACT_EMAIL.trim();
+
+if (emailLink && configuredEmail) {
+  emailLink.href = `mailto:${configuredEmail}`;
   emailLink.textContent = 'メールを送る ↗';
   emailLink.removeAttribute('aria-disabled');
   emailLink.removeAttribute('tabindex');
+
+  if (emailAddress && contactAlternative) {
+    emailAddress.textContent = configuredEmail;
+    contactAlternative.hidden = false;
+  }
+}
+
+if (copyButton && copyLabel && copyStatus && configuredEmail) {
+  copyButton.addEventListener('click', async () => {
+    copyStatus.textContent = '';
+    copyStatus.classList.remove('is-error');
+    try {
+      if (!navigator.clipboard?.writeText) {
+        throw new Error('Clipboard API is unavailable');
+      }
+      await navigator.clipboard.writeText(configuredEmail);
+      copyLabel.textContent = 'コピーしました';
+      copyStatus.textContent = 'メールアドレスをコピーしました。';
+    } catch (error) {
+      copyLabel.textContent = 'コピー';
+      copyStatus.classList.add('is-error');
+      copyStatus.textContent = 'コピーできませんでした。上のアドレスを選択してコピーしてください。';
+    }
+  });
 }
 
 const year = document.querySelector('#copyright-year');

@@ -280,6 +280,16 @@
         <p>仕事に関するご相談やお問い合わせは、メールにてお願いいたします。</p>
         <a class="contact-button" id="contact-email" aria-disabled="true" tabindex="-1">メールアドレス設定後に利用できます <span
             aria-hidden="true">↗</span></a>
+        <div class="contact-alternative" id="contact-alternative" hidden>
+          <p class="contact-alternative__label">または、メールアドレスをコピー</p>
+          <div class="contact-alternative__row">
+            <span class="contact-alternative__address" id="contact-email-address"></span>
+            <button class="contact-copy-button" id="contact-copy" type="button" aria-describedby="contact-copy-status">
+              <span aria-hidden="true">⧉</span> <span id="contact-copy-label">コピー</span>
+            </button>
+          </div>
+          <p class="contact-copy-status" id="contact-copy-status" role="status" aria-live="polite"></p>
+        </div>
       </div>
     </section>
   </main>

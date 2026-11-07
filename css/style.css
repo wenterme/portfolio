@@ -462,6 +462,89 @@ summary:focus-visible {
   max-width: 680px;
 }
 
+
+/* ======================================================================
+   07a. Experience: expandable research details
+   ====================================================================== */
+
+.timeline-item > .timeline-description {
+  color: var(--muted);
+  margin: 0;
+  max-width: 680px;
+}
+
+.experience-details {
+  max-width: 680px;
+  margin-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.experience-details > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+  color: var(--accent);
+  font-size: .86rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+
+.experience-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.experience-details > summary::marker {
+  content: '';
+}
+
+.experience-details > summary:hover {
+  color: #6EE7B7;
+}
+
+.experience-details__icon {
+  flex: 0 0 auto;
+  width: 9px;
+  height: 9px;
+  margin-right: 3px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform .2s ease;
+}
+
+.experience-details[open] .experience-details__icon {
+  transform: rotate(225deg);
+}
+
+.experience-details__body {
+  padding-bottom: 20px;
+  color: var(--muted);
+  font-size: .9rem;
+  line-height: 1.9;
+}
+
+.experience-details__body h4 {
+  margin: 0 0 12px;
+  color: var(--text);
+  font-size: .95rem;
+  font-weight: 600;
+}
+
+.experience-details__body p,
+.timeline-item .experience-details__body p:last-child {
+  margin: 0 0 12px;
+  color: var(--muted);
+  max-width: 680px;
+}
+
+.experience-details__body p:last-child,
+.timeline-item .experience-details__body p:last-child {
+  margin-bottom: 0;
+}
+
 /* ======================================================================
    08. Skills
    ====================================================================== */
@@ -751,5 +834,92 @@ summary:focus-visible {
   *::after {
     animation-duration: .01ms !important;
     transition-duration: .01ms !important;
+  }
+}
+/* ======================================================================
+   Skills: machinery and implements (expandable list)
+   ====================================================================== */
+
+.skill-card .machine-details-wrap {
+  margin-top: 12px;
+}
+
+.machine-details {
+  border-top: 1px dashed var(--border);
+}
+
+.machine-details > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  color: var(--accent);
+  font-size: .86rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+
+.machine-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.machine-details > summary::marker {
+  content: '';
+}
+
+.machine-details > summary:hover {
+  color: #6EE7B7;
+}
+
+.machine-details__icon {
+  flex: 0 0 auto;
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform .2s ease;
+}
+
+.machine-details[open] .machine-details__icon {
+  transform: rotate(225deg);
+}
+
+.machine-details__body {
+  display: grid;
+  gap: 18px;
+  padding: 8px 0 16px;
+}
+
+.machine-category h4 {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: .78rem;
+  font-weight: 600;
+}
+
+.machine-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.machine-list li {
+  padding: 4px 9px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  font-size: .76rem;
+  line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .machine-details__icon {
+    transition: none;
   }
 }

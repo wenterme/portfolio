@@ -1,1 +1,755 @@
-:root{color-scheme:dark;--bg:#101319;--surface:#222B38;--text:#E9EDF4;--muted:#A4B4C5;--accent:#34D399;--border:#344357;--container:1120px;--radius:12px;--header-height:76px;font-family:'Noto Sans JP',sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-height) + 24px)}body{margin:0;background:var(--bg);color:var(--text);font-size:16px;line-height:1.85}a{color:inherit;text-decoration:none}button{font:inherit}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}::selection{background:var(--accent);color:var(--bg)}.container{width:min(calc(100% - 96px),var(--container));margin-inline:auto}.mono,.section-number,.card-index,.timeline-date{font-family:'IBM Plex Mono',monospace}.accent,.section-number,.card-index,.timeline-date{color:var(--accent)}.skip-link{position:fixed;z-index:1000;top:-100px;left:12px;padding:8px 16px;background:var(--accent);color:var(--bg)}.skip-link:focus{top:10px}.site-header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(16,19,25,.92);border-bottom:1px solid rgba(73,88,106,.55);backdrop-filter:blur(14px)}.header-inner{min-height:var(--header-height);display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:700;white-space:nowrap;font-size:1.05rem;letter-spacing:.03em}.nav{display:flex;align-items:center;gap:28px}.nav a{font-size:.82rem;color:var(--muted);transition:color .2s}.nav a:hover,.nav a:focus-visible{color:var(--accent)}.nav .nav-contact{padding:8px 14px;border:1px solid var(--accent);border-radius:6px;color:var(--accent)}.menu-toggle{display:none}.hero{min-height:min(780px,100svh);display:flex;align-items:center;position:relative;overflow:hidden;padding:calc(var(--header-height) + 90px) 0 120px}.hero-inner{position:relative;z-index:1}.hero-grid{position:absolute;inset:0;opacity:.22;pointer-events:none;background-image:linear-gradient(to right,#344357 1px,transparent 1px),linear-gradient(to bottom,#344357 1px,transparent 1px);background-size:80px 80px;mask-image:linear-gradient(90deg,transparent 20%,black 100%)}.eyebrow{font-size:.86rem;letter-spacing:.12em;color:var(--accent);font-weight:600}.hero h1{font-size:clamp(2.3rem,5vw,4.6rem);line-height:1.55;letter-spacing:-.045em;margin:28px 0}.hero-name{font-weight:600}.hero-name .mono{color:var(--muted);font-weight:400;font-size:.85rem}.hero-description{color:var(--muted);margin:24px 0 32px;max-width:640px}.text-link{color:var(--accent);font-weight:600;display:inline-flex;gap:12px;align-items:center;border-bottom:1px solid var(--accent);padding-bottom:6px}.section{padding:120px 0}.section-heading{display:flex;align-items:baseline;gap:22px;margin-bottom:48px}.section-number{font-size:.82rem}.section-heading h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.3;letter-spacing:-.04em;margin:0;font-weight:600}.section-layout{display:grid;grid-template-columns:1fr 1.7fr;gap:60px}.section-layout .section-heading{align-self:start}.about-content{max-width:680px}.about-content p{margin:0 0 22px;color:#C4CFDB}.values{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}.values span{border:1px solid var(--border);border-radius:6px;padding:6px 12px;font-size:.78rem;color:var(--accent)}.achievement-grid,.skill-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.achievement-card,.skill-card{border:1px solid #455466;border-radius:var(--radius);padding:32px;transition:border-color .25s,transform .25s}.achievement-card:hover,.skill-card:hover{border-color:#6D8B93}.card-index{font-size:.75rem;letter-spacing:.1em;margin:0 0 16px}.achievement-card h3{font-size:1.25rem;line-height:1.55;margin:0 0 22px}.metric{display:flex;align-items:baseline;flex-wrap:wrap;gap:12px;margin:0 0 22px}.metric strong{font-family:'IBM Plex Mono',monospace;color:var(--accent);font-size:clamp(2.6rem,5vw,4rem);line-height:1.2}.metric strong span{font-size:.5em}.metric>span{font-size:.84rem;color:var(--muted)}.achievement-card>p:not(.card-index){color:var(--muted);font-size:.91rem}.achievement-card details{margin-top:28px;border-top:1px solid var(--border);padding-top:16px}.achievement-card summary{cursor:pointer;color:var(--accent);font-size:.86rem;font-weight:600}.detail-body{padding-top:12px;color:var(--muted);font-size:.86rem}.detail-body p{margin:0 0 12px}.timeline{list-style:none;margin:0;padding:0 0 0 32px;max-width:850px}.timeline-item{position:relative;border-left:1px solid #455466;padding:0 0 54px 36px}.timeline-item:last-child{border-left-color:transparent;padding-bottom:0}.timeline-item::before{content:'';position:absolute;left:-5px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--bg)}.timeline-date{font-size:.85rem;margin:0 0 12px}.timeline-item h3{font-size:1.25rem;margin:0 0 4px}.timeline-role{font-weight:600;color:#CFD9E4;margin:0 0 12px}.timeline-item p:last-child{color:var(--muted);margin:0;max-width:680px}.skill-card h3{font-size:1.35rem;margin:0 0 24px;display:flex;align-items:center;gap:12px}.skill-symbol{color:var(--accent);font-size:1.5rem}.skill-card dl{margin:0}.skill-card dl>div{padding:16px 0;border-top:1px solid var(--border)}.skill-card dt{font-size:.96rem;font-weight:600}.skill-card dd{margin:4px 0 0;color:var(--muted);font-size:.83rem}.contact-section{padding-bottom:140px}.contact-content{max-width:1120px}.contact-content h3{font-size:clamp(1.9rem,4vw,3.4rem);line-height:1.5;margin:0 0 18px}.contact-content>p{color:var(--muted);margin:0 0 32px}.contact-button{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-width:260px;padding:16px 24px;border-radius:8px;background:var(--accent);color:var(--bg);font-weight:700;transition:transform .2s,background .2s}.contact-button[href]:hover{background:#6EE7B7;transform:translateY(-2px)}.contact-button[aria-disabled=true]{background:#354A48;color:#C1CBCB;cursor:not-allowed}.site-footer{border-top:1px solid var(--border);padding:30px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:.78rem;color:var(--muted)}.reveal{opacity:1;transform:none}@media(prefers-reduced-motion:no-preference){.js-motion .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.js-motion .reveal.is-visible{opacity:1;transform:none}}@media(max-width:900px){.container{width:min(calc(100% - 48px),var(--container))}.section-layout{grid-template-columns:1fr;gap:0}.section{padding:90px 0}.nav{gap:14px}.nav a{font-size:.75rem}}@media(max-width:700px){:root{--header-height:68px}.container{width:calc(100% - 40px)}.menu-toggle{display:flex;width:44px;height:44px;flex-direction:column;align-items:center;justify-content:center;gap:5px;border:1px solid var(--border);border-radius:7px;background:transparent;color:var(--text);cursor:pointer}.menu-toggle span{display:block;width:20px;height:2px;background:currentColor;transition:transform .2s,opacity .2s}.menu-toggle[aria-expanded=true] span:first-child{transform:translateY(7px) rotate(45deg)}.menu-toggle[aria-expanded=true] span:nth-child(2){opacity:0}.menu-toggle[aria-expanded=true] span:last-child{transform:translateY(-7px) rotate(-45deg)}.nav{display:none;position:absolute;top:var(--header-height);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#151B23;border-bottom:1px solid var(--border);padding:12px 20px 20px}.nav.is-open{display:flex}.nav a{font-size:1rem;padding:12px 8px}.nav .nav-contact{margin-top:8px;text-align:center}.hero{min-height:680px;padding:150px 0 90px}.hero h1{font-size:clamp(2rem,7.5vw,3.2rem)}.hero-description br{display:none}.section{padding:80px 0}.section-heading{margin-bottom:32px;gap:14px}.achievement-grid,.skill-grid{grid-template-columns:1fr}.achievement-card,.skill-card{padding:24px}.timeline{padding-left:4px}.timeline-item{padding-left:26px}.contact-section{padding-bottom:90px}.contact-button{width:100%}.footer-inner{flex-direction:column;align-items:flex-start;gap:4px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+/* ======================================================================
+   01. Design tokens / base
+   ====================================================================== */
+
+:root {
+  color-scheme: dark;
+  --bg: #101319;
+  --surface: #222B38;
+  --text: #E9EDF4;
+  --muted: #A4B4C5;
+  --accent: #34D399;
+  --border: #344357;
+  --container: 1120px;
+  --radius: 12px;
+  --header-height: 76px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 24px);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 5px;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* ======================================================================
+   02. Layout and shared utilities
+   ====================================================================== */
+
+.container {
+  width: min(calc(100% - 96px), var(--container));
+  margin-inline: auto;
+}
+
+.mono,
+.section-number,
+.card-index,
+.timeline-date {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.accent,
+.section-number,
+.card-index,
+.timeline-date {
+  color: var(--accent);
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 1000;
+  top: -100px;
+  left: 12px;
+  padding: 8px 16px;
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+/* ======================================================================
+   03. Header and navigation
+   ====================================================================== */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(16, 19, 25, .92);
+  border-bottom: 1px solid rgba(73, 88, 106, .55);
+  backdrop-filter: blur(14px);
+}
+
+.header-inner {
+  min-height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* ========================================
+   Header Logo
+======================================== */
+
+.site-logo {
+  display: inline-flex;
+  align-items: baseline;
+
+  color: #E9EDF4;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1;
+
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition: opacity 0.2s ease;
+}
+
+.site-logo__dot {
+  color: #34D399;
+}
+
+.site-logo:hover {
+  opacity: 0.75;
+}
+
+.site-logo:focus-visible {
+  outline: 2px solid #34D399;
+  outline-offset: 6px;
+  border-radius: 2px;
+}
+
+/* Smartphone */
+@media (max-width: 767px) {
+  .site-logo {
+    font-size: 1.35rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-logo {
+    transition: none;
+  }
+}
+
+.brand {
+  font-weight: 700;
+  white-space: nowrap;
+  font-size: 1.05rem;
+  letter-spacing: .03em;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav a {
+  font-size: .82rem;
+  color: var(--muted);
+  transition: color .2s;
+}
+
+.nav a:hover,
+.nav a:focus-visible {
+  color: var(--accent);
+}
+
+.nav .nav-contact {
+  padding: 8px 14px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  color: var(--accent);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.hero {
+  min-height: min(780px, 100svh);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: calc(var(--header-height) + 90px) 0 120px;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  opacity: .22;
+  pointer-events: none;
+  background-image: linear-gradient(to right, #344357 1px, transparent 1px), linear-gradient(to bottom, #344357 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: linear-gradient(90deg, transparent 20%, black 100%);
+}
+
+.eyebrow {
+  font-size: .86rem;
+  letter-spacing: .12em;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-size: clamp(2.3rem, 5vw, 4.6rem);
+  line-height: 1.55;
+  letter-spacing: -.045em;
+  margin: 28px 0;
+}
+
+.hero-name {
+  font-weight: 600;
+}
+
+.hero-name .mono {
+  color: var(--muted);
+  font-weight: 400;
+  font-size: .85rem;
+}
+
+.hero-description {
+  color: var(--muted);
+  margin: 24px 0 32px;
+  max-width: 640px;
+}
+
+.text-link {
+  color: var(--accent);
+  font-weight: 600;
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 6px;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 22px;
+  margin-bottom: 48px;
+}
+
+.section-number {
+  font-size: .82rem;
+}
+
+.section-heading h2 {
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  line-height: 1.3;
+  letter-spacing: -.04em;
+  margin: 0;
+  font-weight: 600;
+}
+
+.section-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: 60px;
+}
+
+.section-layout .section-heading {
+  align-self: start;
+}
+
+.about-content {
+  max-width: 680px;
+}
+
+.about-content p {
+  margin: 0 0 22px;
+  color: #C4CFDB;
+}
+
+.values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.values span {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: .78rem;
+  color: var(--accent);
+}
+
+/* ======================================================================
+   06. Achievements
+   ====================================================================== */
+
+.achievement-grid,
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.achievement-grid {
+  align-items: start;
+}
+
+.achievement-card,
+.skill-card {
+  border: 1px solid #455466;
+  border-radius: var(--radius);
+  padding: 32px;
+  transition: border-color .25s, transform .25s;
+}
+
+.achievement-card:hover,
+.skill-card:hover {
+  border-color: #6D8B93;
+}
+
+.card-index {
+  font-size: .75rem;
+  letter-spacing: .1em;
+  margin: 0 0 16px;
+}
+
+.achievement-card h3 {
+  font-size: 1.25rem;
+  line-height: 1.55;
+  margin: 0 0 22px;
+}
+
+.metric {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 22px;
+}
+
+.metric strong {
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--accent);
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  line-height: 1.2;
+}
+
+.metric strong span {
+  font-size: .5em;
+}
+
+.metric>span {
+  font-size: .84rem;
+  color: var(--muted);
+}
+
+.achievement-card>p:not(.card-index) {
+  color: var(--muted);
+  font-size: .91rem;
+}
+
+.achievement-card details {
+  margin-top: 28px;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+
+.achievement-card summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-size: .86rem;
+  font-weight: 600;
+}
+
+.detail-body {
+  padding-top: 12px;
+  color: var(--muted);
+  font-size: .86rem;
+}
+
+.detail-body p {
+  margin: 0 0 12px;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 32px;
+  max-width: 850px;
+}
+
+.timeline-item {
+  position: relative;
+  border-left: 1px solid #455466;
+  padding: 0 0 54px 36px;
+}
+
+.timeline-item:last-child {
+  border-left-color: transparent;
+  padding-bottom: 0;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 8px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 5px var(--bg);
+}
+
+.timeline-date {
+  font-size: .85rem;
+  margin: 0 0 12px;
+}
+
+.timeline-item h3 {
+  font-size: 1.25rem;
+  margin: 0 0 4px;
+}
+
+.timeline-role {
+  font-weight: 600;
+  color: #CFD9E4;
+  margin: 0 0 12px;
+}
+
+.timeline-item p:last-child {
+  color: var(--muted);
+  margin: 0;
+  max-width: 680px;
+}
+
+/* ======================================================================
+   08. Skills
+   ====================================================================== */
+
+.skill-card h3 {
+  font-size: 1.35rem;
+  margin: 0 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.skill-symbol {
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.skill-card dl {
+  margin: 0;
+}
+
+.skill-card dl>div {
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+}
+
+.skill-card dt {
+  font-size: .96rem;
+  font-weight: 600;
+}
+
+.skill-card dd {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: .83rem;
+}
+
+/* ======================================================================
+   09. Contact and footer
+   ====================================================================== */
+
+.contact-section {
+  padding-bottom: 140px;
+}
+
+.contact-content {
+  max-width: 1120px;
+}
+
+.contact-content h3 {
+  font-size: clamp(1.9rem, 4vw, 3.4rem);
+  line-height: 1.5;
+  margin: 0 0 18px;
+}
+
+.contact-content>p {
+  color: var(--muted);
+  margin: 0 0 32px;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  min-width: 260px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 700;
+  transition: transform .2s, background .2s;
+}
+
+.contact-button[href]:hover {
+  background: #6EE7B7;
+  transform: translateY(-2px);
+}
+
+.contact-button[aria-disabled=true] {
+  background: #354A48;
+  color: #C1CBCB;
+  cursor: not-allowed;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 30px 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: .78rem;
+  color: var(--muted);
+}
+
+.reveal {
+  opacity: 1;
+  transform: none;
+}
+
+@media(prefers-reduced-motion:no-preference) {
+  .js-motion .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity .65s ease, transform .65s ease;
+  }
+
+  .js-motion .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ======================================================================
+   11. Responsive: tablet
+   ====================================================================== */
+
+@media(max-width:900px) {
+  .container {
+    width: min(calc(100% - 48px), var(--container));
+  }
+
+  .section-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .section {
+    padding: 90px 0;
+  }
+
+  .nav {
+    gap: 14px;
+  }
+
+  .nav a {
+    font-size: .75rem;
+  }
+}
+
+/* ======================================================================
+   12. Responsive: mobile
+   ====================================================================== */
+
+@media(max-width:700px) {
+  :root {
+    --header-height: 68px;
+  }
+
+  .container {
+    width: calc(100% - 40px);
+  }
+
+  .menu-toggle {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    transition: transform .2s, opacity .2s;
+  }
+
+  .menu-toggle[aria-expanded=true] span:first-child {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .menu-toggle[aria-expanded=true] span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle[aria-expanded=true] span:last-child {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: #151B23;
+    border-bottom: 1px solid var(--border);
+    padding: 12px 20px 20px;
+  }
+
+  .nav.is-open {
+    display: flex;
+  }
+
+  .nav a {
+    font-size: 1rem;
+    padding: 12px 8px;
+  }
+
+  .nav .nav-contact {
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .hero {
+    min-height: 680px;
+    padding: 150px 0 90px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 7.5vw, 3.2rem);
+  }
+
+  .hero-description br {
+    display: none;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 32px;
+    gap: 14px;
+  }
+
+  .achievement-grid,
+  .skill-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement-card,
+  .skill-card {
+    padding: 24px;
+  }
+
+  .timeline {
+    padding-left: 4px;
+  }
+
+  .timeline-item {
+    padding-left: 26px;
+  }
+
+  .contact-section {
+    padding-bottom: 90px;
+  }
+
+  .contact-button {
+    width: 100%;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
+
+/* ======================================================================
+   13. Reduced motion
+   ====================================================================== */
+
+@media(prefers-reduced-motion:reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+}
